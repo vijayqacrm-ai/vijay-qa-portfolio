@@ -1,787 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vijay Krishna - CRM Test Lead with 10+ years of Salesforce, Microsoft Dynamics 365, and ERP Testing Experience">
-    <title>Vijay Krishna Parvathaneni - CRM Test Lead & QA Professional</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-
-        /* Navigation */
-        nav {
-            background-color: #2c3e50;
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 0.5rem 1.5rem;
-            display: block;
-            transition: background-color 0.3s;
-        }
-
-        nav a:hover {
-            background-color: #3498db;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
-            color: white;
-            padding: 4rem 2rem;
-            text-align: center;
-        }
-
-        .hero-content {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .hero h1 {
-            font-size: 2.8rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .hero .title {
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-            font-weight: 300;
-            letter-spacing: 1px;
-        }
-
-        .hero .tagline {
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
-            opacity: 0.95;
-        }
-
-        .hero-meta {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-            font-size: 0.95rem;
-            margin-bottom: 2rem;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background-color: #e74c3c;
-            color: white;
-            padding: 0.8rem 2rem;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-            font-weight: bold;
-        }
-
-        .cta-button:hover {
-            background-color: #c0392b;
-        }
-
-        /* Container */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        /* Sections */
-        section {
-            padding: 4rem 0;
-            border-bottom: 1px solid #ecf0f1;
-        }
-
-        section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-            color: #2c3e50;
-            text-align: center;
-        }
-
-        /* About Section */
-        .about-content {
-            max-width: 900px;
-            margin: 0 auto;
-            font-size: 1.05rem;
-            line-height: 1.8;
-        }
-
-        .about-content p {
-            margin-bottom: 1.2rem;
-        }
-
-        /* Skills Section */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .skill-card {
-            background-color: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            border-top: 4px solid #3498db;
-        }
-
-        .skill-card h3 {
-            color: #2c3e50;
-            margin-bottom: 1rem;
-            font-size: 1.2rem;
-        }
-
-        .skill-card ul {
-            list-style: none;
-        }
-
-        .skill-card li {
-            padding: 0.6rem 0;
-            border-bottom: 1px solid #ddd;
-            color: #555;
-        }
-
-        .skill-card li:last-child {
-            border-bottom: none;
-        }
-
-        /* Experience Section */
-        .timeline {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .experience-item {
-            margin-bottom: 2.5rem;
-            padding: 2rem;
-            background-color: #f8f9fa;
-            border-left: 4px solid #3498db;
-            border-radius: 4px;
-            transition: all 0.3s;
-        }
-
-        .experience-item:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-
-        .experience-item h3 {
-            color: #2c3e50;
-            margin-bottom: 0.3rem;
-            font-size: 1.3rem;
-        }
-
-        .company {
-            color: #3498db;
-            font-weight: bold;
-            margin-bottom: 0.2rem;
-        }
-
-        .date {
-            color: #7f8c8d;
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
-            font-style: italic;
-        }
-
-        .experience-details {
-            color: #555;
-            line-height: 1.8;
-        }
-
-        .experience-details ul {
-            margin-left: 1.5rem;
-            margin-top: 0.8rem;
-        }
-
-        .experience-details li {
-            margin-bottom: 0.5rem;
-        }
-
-        .achievements {
-            background-color: #e8f4f8;
-            padding: 1rem;
-            border-radius: 4px;
-            margin-top: 1rem;
-        }
-
-        .achievements strong {
-            color: #2c3e50;
-        }
-
-        .project-divider {
-            margin: 1.2rem 0;
-            border: none;
-            border-top: 1px solid #ddd;
-        }
-
-        /* Projects Section */
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .project-card {
-            background-color: #fff;
-            border: 2px solid #ecf0f1;
-            border-radius: 8px;
-            overflow: hidden;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .project-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-        }
-
-        .project-header {
-            background-color: #3498db;
-            color: white;
-            padding: 1.5rem;
-        }
-
-        .project-header h3 {
-            font-size: 1.2rem;
-            margin-bottom: 0.3rem;
-        }
-
-        .project-meta {
-            font-size: 0.9rem;
-            opacity: 0.95;
-        }
-
-        .project-body {
-            padding: 1.5rem;
-        }
-
-        .project-body p {
-            margin-bottom: 0.8rem;
-            color: #555;
-        }
-
-        .project-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-top: 1rem;
-        }
-
-        .tag {
-            background-color: #e8f4f8;
-            color: #2c3e50;
-            padding: 0.4rem 0.9rem;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 500;
-        }
-
-        /* Certifications Section */
-        .cert-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-
-        .cert-card {
-            background-color: #f0f8ff;
-            padding: 1.5rem;
-            border-radius: 6px;
-            border-left: 4px solid #27ae60;
-        }
-
-        .cert-card p {
-            color: #2c3e50;
-            font-weight: 500;
-        }
-
-        /* Contact Section */
-        .contact-content {
-            text-align: center;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin-top: 2rem;
-            flex-wrap: wrap;
-        }
-
-        .social-links a {
-            color: #3498db;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 0.8rem 1.5rem;
-            border: 2px solid #3498db;
-            border-radius: 5px;
-            transition: all 0.3s;
-            display: inline-block;
-        }
-
-        .social-links a:hover {
-            background-color: #3498db;
-            color: white;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 2rem;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .hero .title {
-                font-size: 1.2rem;
-            }
-
-            section h2 {
-                font-size: 1.8rem;
-            }
-
-            nav ul {
-                flex-direction: column;
-            }
-
-            nav a {
-                padding: 0.5rem 1rem;
-            }
-
-            .hero-meta {
-                gap: 1rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vijay Krishna Parvathaneni — QA Lead and CRM Test Consultant specializing in Salesforce, Microsoft Dynamics 365, ERP, API and integration testing." />
+  <title>Vijay Krishna Parvathaneni | QA Lead & CRM Test Consultant</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!-- Navigation -->
+  <header class="nav">
+    <a class="brand" href="#top">VK<span>.</span></a>
     <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+      <a href="#expertise">Expertise</a>
+      <a href="#experience">Experience</a>
+      <a href="#case-studies">Case Studies</a>
+      <a href="#approach">QA Approach</a>
+      <a href="#contact">Contact</a>
     </nav>
+    <a class="nav-cta" href="assets/Vijay_Krishna_Parvathaneni_CV.pdf" download>Download CV</a>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Vijay Krishna Parvathaneni</h1>
-                <div class="title">CRM Test Lead | QA Professional</div>
-                <p class="tagline">10+ Years of Enterprise CRM & ERP Testing Excellence</p>
-                <div class="hero-meta">
-                    <span>📍 Vijayawada, India</span>
-                    <span>📞 +91 9505444660</span>
-                    <span>✉️ vijay.qacrm@gmail.com</span>
-                </div>
-                <a href="#contact" class="cta-button">Get In Touch</a>
-            </div>
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">QA LEAD · CRM TEST CONSULTANT</p>
+        <h1>Quality leadership for <em>complex enterprise systems.</em></h1>
+        <p class="lead">
+          I help teams validate CRM, ERP, integrations, APIs and business-critical data
+          across enterprise transformation programmes.
+        </p>
+        <div class="chips">
+          <span>Salesforce</span><span>Dynamics 365</span><span>Infor M3</span>
+          <span>API & Integration</span><span>Data & Migration</span>
         </div>
+        <div class="actions">
+          <a class="button primary" href="#case-studies">View selected work</a>
+          <a class="button secondary" href="#contact">Let's talk</a>
+        </div>
+      </div>
+      <div class="hero-profile">
+        <div class="profile-frame">
+          <img src="assets/profile.png" alt="Vijay Krishna Parvathaneni" />
+        </div>
+        <div class="profile-card">
+          <strong>10+ years</strong>
+          <span>QA & Test Engineering</span>
+        </div>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <p>
-                    Senior CRM/ERP Test Lead with <strong>10+ years of hands-on expertise</strong> in enterprise quality assurance. 
-                    I specialize in end-to-end testing for Salesforce, Microsoft Dynamics 365, and integrated ERP platforms including SAP and Infor M3.
-                </p>
-                <p>
-                    I'm a <strong>risk-focused QA leader</strong> who proactively analyzes business requirements, integrations, and dependencies 
-                    to identify and prevent defects early. My approach combines functional, integration, regression, UAT, data, security, and API testing 
-                    across complex CRM and ERP ecosystems.
-                </p>
-                <p>
-                    Throughout my career, I've led QA teams supporting US and UK clients, managed offshore QA coordination, implemented quality strategies, 
-                    and consistently delivered high-quality enterprise transformations. I'm proficient in Tricentis Tosca automation, Agile delivery, 
-                    migration testing, and comprehensive data validation.
-                </p>
-            </div>
-        </div>
+    <section class="metrics">
+      <div><strong>10+</strong><span>Years in QA</span></div>
+      <div><strong>CRM + ERP</strong><span>Enterprise ecosystems</span></div>
+      <div><strong>API + Data</strong><span>Cross-system validation</span></div>
+      <div><strong>QA Lead</strong><span>Strategy & delivery</span></div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="container">
-            <h2>Core Skills & Expertise</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>🖥️ CRM Platforms</h3>
-                    <ul>
-                        <li>Salesforce (Sales/Service Cloud)</li>
-                        <li>Microsoft Dynamics 365 CRM</li>
-                        <li>Salesforce Flows & Workflows</li>
-                        <li>Power Automate</li>
-                        <li>Security Roles, Profiles, Permission Sets</li>
-                        <li>SOQL & Salesforce Workbench</li>
-                    </ul>
-                </div>
-
-                <div class="skill-card">
-                    <h3>🏭 ERP & Integration Systems</h3>
-                    <ul>
-                        <li>Infor M3, IDM, ION OneView</li>
-                        <li>SAP ERP</li>
-                        <li>MuleSoft Middleware</li>
-                        <li>Event-Driven & Asynchronous Processing</li>
-                        <li>API Integration Testing</li>
-                        <li>BOD Validation</li>
-                    </ul>
-                </div>
-
-                <div class="skill-card">
-                    <h3>🧪 Testing Methodologies</h3>
-                    <ul>
-                        <li>Functional Testing</li>
-                        <li>Integration Testing</li>
-                        <li>Regression Testing</li>
-                        <li>UAT & SIT</li>
-                        <li>API & REST Testing</li>
-                        <li>Security & Access Control Testing</li>
-                        <li>Data Migration & Validation</li>
-                    </ul>
-                </div>
-
-                <div class="skill-card">
-                    <h3>🛠️ Tools & Technologies</h3>
-                    <ul>
-                        <li>Tricentis Tosca Automation</li>
-                        <li>Postman (API Testing)</li>
-                        <li>SQL Database Testing</li>
-                        <li>Azure DevOps & Jira</li>
-                        <li>Salesforce Inspector</li>
-                        <li>Power BI Reports Validation</li>
-                    </ul>
-                </div>
-
-                <div class="skill-card">
-                    <h3>👥 QA Leadership</h3>
-                    <ul>
-                        <li>Test Strategy & Planning</li>
-                        <li>Agile/Scrum Delivery</li>
-                        <li>Team Leading & Mentoring</li>
-                        <li>Offshore QA Coordination</li>
-                        <li>Defect Lifecycle Management</li>
-                        <li>Risk Assessment & Management</li>
-                        <li>Release Readiness Reporting</li>
-                    </ul>
-                </div>
-
-                <div class="skill-card">
-                    <h3>📊 Quality Engineering</h3>
-                    <ul>
-                        <li>Shift-Left QA</li>
-                        <li>Requirements Analysis</li>
-                        <li>Traceability Matrix</li>
-                        <li>Risk & Impact Analysis</li>
-                        <li>Defect Prevention</li>
-                        <li>Cross-CRM Architecture</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <section id="about" class="section split">
+      <div>
+        <p class="eyebrow">ABOUT</p>
+        <h2>Testing beyond the screen.</h2>
+      </div>
+      <div class="body-copy">
+        <p>
+          I’m a Senior CRM/ERP Test Lead with 10+ years of experience across Salesforce,
+          Microsoft Dynamics 365 and ERP platforms including Infor M3 and SAP, specialising
+          in end-to-end QA for enterprise transformation and integration programmes.
+        </p>
+        <p>
+          My work sits at the intersection of business processes, applications, integrations
+          and data. I move from CRM configuration and security to API payloads, middleware,
+          backend validation and downstream business outcomes.
+        </p>
+        <p>
+          I bring a risk-focused, shift-left approach to test strategy, coverage, defect
+          prevention, release readiness and distributed QA coordination.
+        </p>
+      </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience">
-        <div class="container">
-            <h2>Professional Experience</h2>
-            <div class="timeline">
-                
-                <div class="experience-item">
-                    <h3>CRM Test Lead</h3>
-                    <div class="company">ThoughtQuad Private Limited (Kerv Digital)</div>
-                    <div class="date">Jul 2025 - Present</div>
-                    <div class="experience-details">
-                        <strong>Client:</strong> The Scouts Association (UK)<br>
-                        <strong>Project:</strong> TSA CRM Transformation & Membership Management Programme (Salesforce & Microsoft Dynamics 365)
-                        <ul>
-                            <li>Leading end-to-end QA for large-scale CRM transformation involving Salesforce, MS Dynamics 365, Azure, React Portal, APIs, and third-party systems</li>
-                            <li>Performing Functional, Integration, System, Regression, End-to-End, and UAT testing across Salesforce and Dynamics 365 ecosystems</li>
-                            <li>Reviewing business requirements and identifying test scenarios, risks, dependencies, and coverage gaps</li>
-                            <li>Designing comprehensive test cases for Salesforce Sales/Service Cloud and Dynamics 365 CRM business processes</li>
-                            <li>Validating end-to-end customer/member lifecycle processes across Salesforce, D365, Portal, APIs, middleware, and external systems</li>
-                            <li>Performing data validation using SOQL, Salesforce Inspector, Workbench, SQL queries, and database-level verification</li>
-                            <li>Executing API and integration testing using Postman to validate REST APIs and data synchronization</li>
-                            <li>Testing CRM security models including Salesforce Profiles, Roles, Permission Sets, and Dynamics 365 security configurations</li>
-                            <li>Managing defect lifecycle using Azure DevOps and supporting UAT coordination</li>
-                            <li>Mentoring QA team members and contributing to QA governance and continuous improvement</li>
-                        </ul>
-                        <div class="achievements">
-                            <strong>Key Achievements:</strong>
-                            <ul style="margin-left: 1rem; margin-top: 0.5rem;">
-                                <li>Improved test coverage through common CRM testing strategy across Salesforce and D365</li>
-                                <li>Identified and resolved critical data and integration issues across CRM, API, and middleware layers</li>
-                                <li>Successfully validated complex asynchronous and event-driven integrations</li>
-                                <li>Strengthened release confidence through structured regression and end-to-end testing</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="experience-item">
-                    <h3>Senior Software Test Specialist | Sr. CRM/ERP QA Engineer</h3>
-                    <div class="company">COFORGE LIMITED (CIGNITI TECHNOLOGIES)</div>
-                    <div class="date">Nov 2021 - Jul 2025 (3+ years)</div>
-                    <div class="experience-details">
-                        Supported multiple Fortune 500 clients across different CRM and ERP transformation projects. Led end-to-end QA strategy, offshore team coordination, and delivered high-quality enterprise solutions.
-                        
-                        <hr class="project-divider">
-                        
-                        <strong>Project 1: Georgia-Pacific (USA) - CRM-ERP Integration</strong><br>
-                        <strong>Duration:</strong> 2021-2025 | <strong>Client:</strong> Georgia-Pacific Corp (Fortune 500 | Georgia, USA)
-                        <ul>
-                            <li>Led end-to-end CRM-ERP QA across Infor M3, Infor IDM, ION OneView, and Microsoft Dynamics 365 CRM</li>
-                            <li>Performed Infor M3–Dynamics 365 integration testing validating upstream ERP data and downstream CRM transactions</li>
-                            <li>Created upstream test data directly in Infor M3 using Tosca, reducing test-data preparation effort by ~40%</li>
-                            <li>Validated BODs, API endpoints, and backend data pipelines ensuring accurate data exchange across systems</li>
-                            <li>Performed functional, integration, regression, smoke, and end-to-end testing across Sandbox and Production environments</li>
-                            <li>Validated D365 CRM configurations, Power BI reports, Power Automate workflows, and security roles</li>
-                            <li>Supported Tosca regression automation including XScan control rescanning and Execution List validation</li>
-                            <li>Performed API and database-level validation to verify transaction integrity across ERP, integration, and CRM layers</li>
-                            <li>Led offshore QA coordination managing daily team updates, blockers, dependencies, and delivery risks</li>
-                            <li>Consolidated weekly, monthly, and quarterly QA reports covering project status, testing progress, and defect metrics</li>
-                            <li>Implemented Defect vs. Bug classification model improving triage accuracy and reporting</li>
-                        </ul>
-                        <div class="achievements">
-                            <strong>Key Achievements:</strong>
-                            <ul style="margin-left: 1rem; margin-top: 0.5rem;">
-                                <li>Reduced test-cycle time by 15% through reusable test strategies</li>
-                                <li>Improved defect detection by 30% through shift-left QA and early integration validation</li>
-                                <li>Reduced test-data preparation effort by ~40% through Tosca-driven upstream data creation</li>
-                                <li>Improved cross-team coordination supporting smooth releases and account-level governance</li>
-                            </ul>
-                        </div>
-
-                        <hr class="project-divider">
-
-                        <strong>Project 2: Synovus Corp (USA) - Salesforce Migration & BAU Testing</strong><br>
-                        <strong>Duration:</strong> 2021-2025 | <strong>Client:</strong> Synovus Corp (Georgia, USA | Banking)
-                        <ul>
-                            <li>Supported middleware migration from TIBCO to MuleSoft, validating end-to-end data integration between FIS and Salesforce</li>
-                            <li>Performed migration/data validation including field-level comparisons, source-to-target mapping, and data integrity verification</li>
-                            <li>Executed integration, regression, smoke, SIT, and UAT testing across 2-week sprint cycles and monthly releases</li>
-                            <li>Validated API-based integrations using Postman and performed backend/data verification using SQL</li>
-                            <li>Executed Tosca smoke/regression suites during monthly Salesforce Sales & Service Cloud releases</li>
-                            <li>Collaborated with development, BA, middleware, and QA teams on defect triage and root-cause analysis</li>
-                            <li>Managed test cases, defects, and traceability using Azure DevOps</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="experience-item">
-                    <h3>Senior Test Engineer</h3>
-                    <div class="company">V2 SOFTWARE TECHNOLOGIES</div>
-                    <div class="date">Apr 2016 - Nov 2021 (5+ years)</div>
-                    <div class="experience-details">
-                        <strong>Client:</strong> CBRE Group Inc. (Global Real Estate Firm)<br>
-                        <strong>Project:</strong> CBRE CX Enhancer - Multi-System Integration (Salesforce, SAP ERP, MuleSoft, Custom Portal)
-                        <ul>
-                            <li>Tested complex integrations between Salesforce (Sales & Service Cloud), SAP ERP, MuleSoft middleware, and Customer Portal</li>
-                            <li>Performed API & integration testing using Postman to validate real-time data consistency</li>
-                            <li>Used SOQL and Salesforce Workbench to validate data integrity across Salesforce and SAP ERP</li>
-                            <li>Conducted security testing for role-based access controls and CRM permissions</li>
-                            <li>Tested UI/UX functionality of Customer Portal ensuring seamless user experiences</li>
-                            <li>Led QA team ensuring timely execution, defect tracking, and risk mitigation</li>
-                            <li>Collaborated with development teams for defect resolution and stable releases</li>
-                        </ul>
-                        <div class="achievements">
-                            <strong>Key Achievements:</strong>
-                            <ul style="margin-left: 1rem; margin-top: 0.5rem;">
-                                <li>Enhanced data integrity by identifying and resolving critical cross-system integration defects</li>
-                                <li>Led QA team contributing to improved portal performance and user experience</li>
-                                <li>Ensured stable releases and platform reliability for enterprise customer base</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+    <section id="expertise" class="section dark">
+      <div class="section-heading">
+        <p class="eyebrow">CORE EXPERTISE</p>
+        <h2>Where I add the most value.</h2>
+      </div>
+      <div class="expertise-grid">
+        <article>
+          <span class="num">01</span>
+          <h3>CRM Quality</h3>
+          <p>Salesforce Sales & Service Cloud and Dynamics 365 CRM across business processes, configuration, workflows, security, data and regression.</p>
+          <div class="tag-row"><span>Salesforce</span><span>D365 CE</span><span>Security</span><span>Workflows</span></div>
+        </article>
+        <article>
+          <span class="num">02</span>
+          <h3>Integration & API QA</h3>
+          <p>End-to-end validation across CRM, ERP, APIs, middleware, cache/database layers and asynchronous processing.</p>
+          <div class="tag-row"><span>Postman</span><span>REST</span><span>BODs</span><span>Mappings</span></div>
+        </article>
+        <article>
+          <span class="num">03</span>
+          <h3>Data & Migration</h3>
+          <p>Source-to-target validation, field mappings, transformations, backend verification and data integrity across migration and integration flows.</p>
+          <div class="tag-row"><span>SQL</span><span>SOQL</span><span>Migration</span><span>Reconciliation</span></div>
+        </article>
+        <article>
+          <span class="num">04</span>
+          <h3>QA Leadership</h3>
+          <p>Risk-based strategy, planning, test readiness, defect governance, UAT support, reporting, release decisions and team coordination.</p>
+          <div class="tag-row"><span>Strategy</span><span>Risk</span><span>UAT</span><span>Release readiness</span></div>
+        </article>
+      </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2>Key Projects & Achievements</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Scouts Association (TSA) CRM Transformation</h3>
-                        <div class="project-meta">Current | UK | Multi-Platform</div>
-                    </div>
-                    <div class="project-body">
-                        <p><strong>Scope:</strong> Large-scale CRM transformation for UK-based Scouts Association involving membership management, compliance, and volunteer lifecycle processes.</p>
-                        <p><strong>Platforms:</strong> Salesforce, Microsoft Dynamics 365 CRM, Azure, React Portal, APIs, middleware integration.</p>
-                        <p><strong>Testing:</strong> End-to-end QA across functional, integration, UAT, security, and data validation.</p>
-                        <p><strong>Key Results:</strong> Improved test coverage across dual CRM platforms, identified critical integration issues, validated complex asynchronous processing.</p>
-                        <div class="project-tags">
-                            <span class="tag">Salesforce</span>
-                            <span class="tag">Dynamics 365</span>
-                            <span class="tag">API Testing</span>
-                            <span class="tag">Integration Testing</span>
-                            <span class="tag">Azure</span>
-                            <span class="tag">Postman</span>
-                        </div>
-                    </div>
-                </div>
+    <section id="experience" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">SELECTED EXPERIENCE</p>
+        <h2>Enterprise programmes, end to end.</h2>
+      </div>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Georgia-Pacific CRM-ERP Integration</h3>
-                        <div class="project-meta">2021-2025 | USA | Fortune 500</div>
-                    </div>
-                    <div class="project-body">
-                        <p><strong>Scope:</strong> Complex integration between Infor M3 ERP, IDM, ION OneView middleware, and Microsoft Dynamics 365 CRM for enterprise customer experience platform.</p>
-                        <p><strong>Challenge:</strong> 200+ business processes, 10K+ daily transactions, real-time data synchronization.</p>
-                        <p><strong>Key Achievement:</strong> Reduced test-data preparation by 40% through Tosca-based upstream data creation. Improved defect detection by 30% through shift-left QA.</p>
-                        <div class="project-tags">
-                            <span class="tag">Infor M3</span>
-                            <span class="tag">Dynamics 365</span>
-                            <span class="tag">Tosca Automation</span>
-                            <span class="tag">SQL</span>
-                            <span class="tag">BOD Validation</span>
-                            <span class="tag">Offshore Coordination</span>
-                        </div>
-                    </div>
-                </div>
+      <div class="timeline">
+        <article class="timeline-item featured">
+          <div class="timeline-date">Jul 2025 — Present</div>
+          <div>
+            <p class="company">ThoughtQuad Private Limited (Kerv Digital)</p>
+            <h3>CRM Test Lead · Client: The Scouts Association, UK</h3>
+            <p class="project">TSA CRM Transformation & Membership Management Programme</p>
+            <p>Leading end-to-end QA across Salesforce, Dynamics 365 CRM, Azure, a React-based membership portal, APIs, middleware, cache layers and third-party systems.</p>
+            <div class="impact"><span>Salesforce + D365</span><span>APIs + Middleware</span><span>Security + Data</span><span>E2E + UAT</span></div>
+          </div>
+        </article>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Synovus Corp Salesforce Migration & BAU</h3>
-                        <div class="project-meta">2021-2025 | USA | Banking</div>
-                    </div>
-                    <div class="project-body">
-                        <p><strong>Scope:</strong> Middleware migration from TIBCO to MuleSoft with end-to-end data integration testing between FIS and Salesforce for US banking client.</p>
-                        <p><strong>Challenge:</strong> Continuous integration, regression, and UAT cycles with monthly releases while supporting production BAU.</p>
-                        <p><strong>Key Achievement:</strong> Successfully validated migration data integrity, executed Tosca regression suites across monthly releases, and maintained zero-defect production deployment.</p>
-                        <div class="project-tags">
-                            <span class="tag">Salesforce</span>
-                            <span class="tag">MuleSoft</span>
-                            <span class="tag">API Testing</span>
-                            <span class="tag">Tosca</span>
-                            <span class="tag">Migration Testing</span>
-                            <span class="tag">Postman</span>
-                        </div>
-                    </div>
-                </div>
+        <article class="timeline-item">
+          <div class="timeline-date">Nov 2021 — Jul 2025</div>
+          <div>
+            <p class="company">Coforge Limited (Cigniti Technologies)</p>
+            <h3>Senior Software Test Specialist / Sr. D365 QA Engineer</h3>
+            <p class="project">Client: Georgia-Pacific · Customer Experience (PCDC-CX)</p>
+            <p>Led CRM–ERP QA across Infor M3, IDM, ION OneView and Dynamics 365, validating business processes, BOD/API exchange, mappings, transformations, backend data and end-to-end consistency.</p>
+            <div class="impact"><span>Infor M3</span><span>D365</span><span>Tosca</span><span>CRM–ERP</span></div>
+          </div>
+        </article>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>CBRE Customer Portal & CRM-ERP Integration</h3>
-                        <div class="project-meta">2016-2021 | USA | Real Estate</div>
-                    </div>
-                    <div class="project-body">
-                        <p><strong>Scope:</strong> Multi-system integration for global real estate firm: Salesforce, SAP ERP, MuleSoft middleware, and React-based Customer Portal.</p>
-                        <p><strong>Testing:</strong> End-to-end integration, API validation, security testing, UI/UX verification, data integrity across systems.</p>
-                        <p><strong>Key Achievement:</strong> Led QA team to identify and resolve critical cross-system defects, ensuring platform stability and improved customer experience.</p>
-                        <div class="project-tags">
-                            <span class="tag">Salesforce</span>
-                            <span class="tag">SAP ERP</span>
-                            <span class="tag">MuleSoft</span>
-                            <span class="tag">API Testing</span>
-                            <span class="tag">Postman</span>
-                            <span class="tag">Team Leadership</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <article class="timeline-item">
+          <div class="timeline-date">Nov 2021 — Jul 2025</div>
+          <div>
+            <p class="company">Coforge Limited (Cigniti Technologies)</p>
+            <h3>Sr. Salesforce QA Engineer</h3>
+            <p class="project">Client: Synovus Corp · Salesforce BAU & Migration Testing</p>
+            <p>Supported TIBCO-to-MuleSoft migration and Salesforce testing, including source-to-target validation, transformations, API testing, SQL validation, SIT, UAT and regression.</p>
+            <div class="impact"><span>Salesforce</span><span>TIBCO → MuleSoft</span><span>Postman</span><span>SQL</span></div>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-date">Apr 2016 — Nov 2021</div>
+          <div>
+            <p class="company">V2 Software Technologies</p>
+            <h3>Senior Test Engineer · Client: CBRE Group Inc.</h3>
+            <p class="project">CBRE CX Enhancer · Salesforce, SAP ERP & Customer Portal</p>
+            <p>Tested complex integrations between Salesforce, SAP ERP, MuleSoft and a custom customer portal, including API, data integrity, security and UI/UX validation.</p>
+            <div class="impact"><span>Salesforce</span><span>SAP</span><span>MuleSoft</span><span>Portal</span></div>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <!-- Certifications Section -->
-    <section id="certifications">
-        <div class="container">
-            <h2>Certifications & Training</h2>
-            <div class="cert-grid">
-                <div class="cert-card">
-                    <p>🏆 Certified ETL Tester</p>
-                </div>
-                <div class="cert-card">
-                    <p>🏆 Tricentis Tosca Fundamentals - Automating Web Application Testing (AS1)</p>
-                </div>
-                <div class="cert-card">
-                    <p>🏆 Tricentis Tosca Fundamentals - Optimizing Test Automation with Centralized Test Data (AS2)</p>
-                </div>
-                <div class="cert-card">
-                    <p>🏆 Tricentis Tosca Deep Dive - Automating Beyond Web Applications (AE1)</p>
-                </div>
-                <div class="cert-card">
-                    <p>🏆 Tricentis Tosca Deep Dive - Structuring Test Cases & Test Data (TDS1)</p>
-                </div>
-                <div class="cert-card">
-                    <p>🏆 Tricentis Tosca Deep Dive - Managing Stateful Data (TDS2)</p>
-                </div>
-            </div>
-        </div>
+    <section id="case-studies" class="section light">
+      <div class="section-heading">
+        <p class="eyebrow">SELECTED CASE STUDIES</p>
+        <h2>How I approach complex QA problems.</h2>
+        <p class="section-intro">Client information is intentionally abstracted. These case studies describe the type of work performed without exposing confidential implementation details.</p>
+      </div>
+
+      <div class="case-grid">
+        <article class="case-card">
+          <div class="case-number">01</div>
+          <h3>CRM ↔ ERP Integration QA</h3>
+          <p class="muted">Infor M3 → integration layer → Dynamics 365</p>
+          <div class="flow"><span>CRM</span><b>→</b><span>API / BOD</span><b>→</b><span>Integration</span><b>→</b><span>ERP</span></div>
+          <ul>
+            <li>Created upstream M3 test data using Tosca.</li>
+            <li>Validated mappings, transformations and BOD/API behaviour.</li>
+            <li>Verified backend data and downstream CRM outcomes.</li>
+            <li>Supported end-to-end and regression readiness.</li>
+          </ul>
+          <strong class="result">~40% less test-data preparation effort</strong>
+        </article>
+
+        <article class="case-card">
+          <div class="case-number">02</div>
+          <h3>Middleware Migration Testing</h3>
+          <p class="muted">TIBCO → MuleSoft → Salesforce</p>
+          <div class="flow"><span>Source</span><b>→</b><span>Middleware</span><b>→</b><span>Salesforce</span></div>
+          <ul>
+            <li>Performed source-to-target field comparisons.</li>
+            <li>Validated mappings, formats and transformations.</li>
+            <li>Tested APIs with Postman and verified data with SQL.</li>
+            <li>Executed SIT, UAT, regression and migration validation.</li>
+          </ul>
+          <strong class="result">Data integrity across migration paths</strong>
+        </article>
+
+        <article class="case-card">
+          <div class="case-number">03</div>
+          <h3>Cross-CRM QA Strategy</h3>
+          <p class="muted">Salesforce + Dynamics 365 transformation</p>
+          <div class="flow"><span>Business</span><b>→</b><span>CRM</span><b>→</b><span>Integration</span><b>→</b><span>Data</span></div>
+          <ul>
+            <li>Built common coverage across functional, integration and E2E flows.</li>
+            <li>Validated configuration, workflows, security and access.</li>
+            <li>Used risk, dependencies and downstream impact to drive coverage.</li>
+            <li>Supported UAT, release readiness and production validation.</li>
+          </ul>
+          <strong class="result">15% faster test cycles · 30% better defect detection</strong>
+        </article>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <div class="contact-content">
-                <p style="font-size: 1.05rem; margin-bottom: 1rem;">
-                    I'm always interested in discussing QA strategies, CRM/ERP testing challenges, transformation initiatives, and career opportunities.
-                </p>
-                <p style="font-size: 1rem; color: #666; margin-bottom: 2rem;">
-                    Feel free to reach out through any of the channels below.
-                </p>
-                <div class="social-links">
-                    <a href="mailto:vijay.qacrm@gmail.com">✉️ Email</a>
-                    <a href="https://www.linkedin.com/in/vijay-krishna-parvathaneni/" target="_blank">💼 LinkedIn</a>
-                    <a href="https://github.com/vijayqacrm-ai" target="_blank">🐙 GitHub</a>
-                </div>
-            </div>
-        </div>
+    <section id="approach" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">QA APPROACH</p>
+        <h2>Business process first. Risk always.</h2>
+      </div>
+      <div class="approach-grid">
+        <div><span>01</span><h3>Understand the business flow</h3><p>Start with the transaction and expected business outcome, not just individual screens.</p></div>
+        <div><span>02</span><h3>Map the ecosystem</h3><p>Identify CRM, ERP, APIs, middleware, data stores, third parties and asynchronous dependencies.</p></div>
+        <div><span>03</span><h3>Prioritize risk</h3><p>Focus deeper testing on business-critical flows, complex integrations, data risk and production impact.</p></div>
+        <div><span>04</span><h3>Validate beyond UI</h3><p>Where appropriate, validate API payloads, mappings, transformations, backend data and downstream results.</p></div>
+        <div><span>05</span><h3>Drive defects to root cause</h3><p>Use triage, evidence and cross-team collaboration to distinguish symptoms from underlying issues.</p></div>
+        <div><span>06</span><h3>Make release risk visible</h3><p>Combine test coverage, defects, environment readiness, dependencies and residual risk into release decisions.</p></div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Vijay Krishna Parvathaneni - CRM Test Lead. All rights reserved.</p>
-    </footer>
+    <section class="section dark skills-section">
+      <div class="section-heading">
+        <p class="eyebrow">TOOLS & TECHNOLOGY</p>
+        <h2>A practical enterprise QA toolkit.</h2>
+      </div>
+      <div class="skill-columns">
+        <div><h3>CRM</h3><p>Microsoft Dynamics 365 CE · Salesforce Sales Cloud · Salesforce Service Cloud</p></div>
+        <div><h3>ERP & Integration</h3><p>Infor M3 · Infor IDM · ION OneView · SAP · MuleSoft · APIs · BODs</p></div>
+        <div><h3>API & Data</h3><p>Postman · REST APIs · SQL · SOQL · Salesforce Inspector · Workbench</p></div>
+        <div><h3>Automation & Delivery</h3><p>Tricentis Tosca · Azure DevOps · Jira · Agile/Scrum · Playwright (developing)</p></div>
+      </div>
+    </section>
+
+    <section class="section proof">
+      <div class="section-heading">
+        <p class="eyebrow">SELECTED IMPACT</p>
+        <h2>Measured where it matters.</h2>
+      </div>
+      <div class="proof-grid">
+        <div><strong>15%</strong><p>Reduction in test-cycle time through reusable strategies and regression assets.</p></div>
+        <div><strong>30%</strong><p>Improvement in defect detection through shift-left QA and early integration validation.</p></div>
+        <div><strong>~40%</strong><p>Reduction in test-data preparation effort through Tosca-driven M3 upstream data creation.</p></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div>
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2>Need QA leadership for a CRM or enterprise transformation?</h2>
+        <p class="contact-copy">Available for senior QA, CRM testing, integration/API testing, migration validation, QA strategy and fractional QA leadership engagements.</p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:vijay.qacrm@gmail.com">vijay.qacrm@gmail.com</a>
+        <a href="tel:+919505444660">+91 95054 44660</a>
+        <a href="https://www.linkedin.com/in/vijay-krishna-parvathaneni/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Vijay Krishna Parvathaneni</span>
+    <span>QA Lead · CRM Test Consultant</span>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
